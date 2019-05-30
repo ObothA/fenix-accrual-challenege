@@ -22,7 +22,7 @@ How to use the system
 
 for the employee role, login with any of these credentials
 
-Employee ID    Seniority
+EmployeeID    Seniority
 
 1                  B
 
