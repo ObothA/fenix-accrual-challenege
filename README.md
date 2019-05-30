@@ -18,12 +18,12 @@ How to use the system
 <p> request withdraw of a certain amout of points, logout </p>
 <p> then login as manager and sign off request, logout</p>
 <p> then login as finance and approve withdraw</p>
-br>
 
 
 for the employee role, login with any of these credentials
 
 Employee ID    Seniority
+
 1                  B
 
 2                  C
