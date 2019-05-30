@@ -1,0 +1,33 @@
+
+<div class="text-center">
+<h1>welcome</h1>
+
+<p> employeeID: <span> <%- personelData.employeeID %>    |     seniority</span> seniority: <span> <%- personelData.seniority %> </span>     |    years accrued: <span> <%- years %> </span>  |    months accrued: <span> <%- months %> </span></p>
+<br>
+<br>
+<h2>Points acrewed </h2>
+<p>  monthly seniority points  : <%-points.monthly_seniority_points %> </p>
+<p>  tenure points  : <%-points.tenure_points %> </p>
+
+<p>  total  points accrued: <%-points.total%> </p>
+<p> points used: <%- points_used %> </p>
+<p> Balance : <%- points.total - points_used %></p>
+
+<br>
+<br>
+
+<div class="row">
+    <div class="col-sm-4 mx-auto">
+        <h2> Withdraw Points</h2>
+        <form action="/withdrawPoints" method='POST'>
+            <div class="form-group">
+                <div class="form-group">
+                    <input type="text" name='points' class="form-control form-control-lg"
+                        placeholder=''>
+                </div>
+            <input type="submit" value="Request withdraw" class='btn btn-dark btn-lg'>
+        </form>
+    </div>
+</div>
+
+</div>

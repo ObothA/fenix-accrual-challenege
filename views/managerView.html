@@ -1,0 +1,14 @@
+<div class="text-center">
+    <h1>Welcome manager</h1>
+    <ul class="list-group">
+    <% for(var x = 0; x < personelRepository.length; x++){%>
+        <% if(personelRepository[x].manager_sign_off === true){ %>
+            <li class="list-group-item">
+                   employee ID <%= personelRepository[x].employeeID %>   |  seniority <%= personelRepository[x].seniority %>  | Requested Withdraw  <%= personelRepository[x].requested_withdraw %> <a class="btn btn-info btn-md" href="/manager_signOff/<%= x %>" > sign off </a>
+            </li>   
+             
+        <% } %>
+
+    <% }; %>
+</ul>
+</div>

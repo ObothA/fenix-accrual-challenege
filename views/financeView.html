@@ -1,0 +1,14 @@
+<div class="text-center">
+        <h1>Welcome finance</h1>
+        <ul class="list-group">
+        <% for(var x = 0; x < personelRepository.length; x++){%>
+            <% if(personelRepository[x].manager_sign_off === false && personelRepository[x].finance_sign_off === true){ %>
+                <li class="list-group-item">
+                       employee ID <%= personelRepository[x].employeeID %>   |  seniority <%= personelRepository[x].seniority %>  | Requested Withdraw  <%= personelRepository[x].requested_withdraw %> <a class="btn btn-info btn-md" href="/finance_signOff/<%= x %>" > Approve withdrawal </a>
+                </li>   
+                 
+            <% } %>
+    
+        <% }; %>
+    </ul>
+    </div>

@@ -1,0 +1,52 @@
+
+<div class="row">
+
+<div class='col-md-6'>
+    <h4>How to use the accural system</h4>
+    <p>login as an employee with credentials provided below, or any on the list of employees</p>
+    <p> request withdraw of a certain amout of points, logout </p>
+    <p> then login as manager and sign off request, logout</p>
+    <p> then login as finance and approve withdraw</p>
+    <br>
+
+    <h5>sampe login for an employee</h5>
+    <p>role : employee   ,  seniority: B ,   employee id: 1</p>
+    <br>
+    <br>
+
+    <h5>sampe login for manager</h5>
+    <p>role : manager   ,  seniority: E ,   employee id: 11</p>
+    <br>
+    <br>
+
+    <h5>sampe login for  finance</h5>
+    <p>role : finance   ,  seniority: E ,   employee id: 12</p>
+</div>
+
+<div> 
+<h1 class="display-6 mb-6 text-center">
+    Please Login to access data
+</h1>
+
+<form action="/login" method='POST'>
+    <div class="form-group">
+        <div class="form-group">
+            <label for="role">Role: </label>
+            <input type="text" name='role' class="form-control form-control-lg"
+                placeholder='employee or manager or finance'>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Seniority: </label>
+            <input type="text" name='seniority' class="form-control form-control-lg" placeholder='A, B, C, D, or E'>
+        </div>
+
+        <div class="form-group">
+            <label for="role">Employee ID: </label>
+            <input type="text" name='employeeID' class="form-control form-control-lg" placeholder='1,2... or 11,12'>
+        </div>
+    </div>
+    <input type="submit" value="login" class='btn btn-dark btn-lg'>
+</form>
+</div>
+</div>
